@@ -1,0 +1,28 @@
+include ../s4-info/s4-info
+
+mixin s4(data)
+    +b.SECTION.s4.section
+        +e.container
+            +e.column._text
+                +e.H2.title.section__title2 Consulenza
+
+                p.section__text
+                    | #[<b>Il servizio di consulenza</b>] che Sicurezza88 propone per garantire la sicurezza del
+                    | lavoro all'interno di #[<b>ambienti confinati</b>] prevede tre fasi fondamentali:
+
+                ul.section__list
+                    li.section__list-item
+                        | Analisi degli spazi e individuazione dei rischi
+                    li.section__list-item
+                        | Valutazione dei rischi individuati e di quelli potenziali
+                    li.section__list-item
+                        | Identificazione delle procedure di lavoro e di emergenza 	da effettuare durante
+                        | i lavori di manutenzione degli spazi 	confinati
+
+                p.section__text
+                    | Individuata la soluzione idonea, a seconda delle esigenze dell’azienda Sicurezza88 offre la
+                    | possibilità di #[<b>installazione certificata</b>] delle attrezzature necessarie, la
+                    | #[<b>formazione del personale</b>] addetto e la #[<b>manutenzione periodica</b>].
+
+            +e.column
+                +s4-info(s4Info.main)

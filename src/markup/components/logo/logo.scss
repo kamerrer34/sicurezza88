@@ -1,0 +1,19 @@
+.logo {
+    position: absolute;
+    top: rem(50);
+    left: rem(130);
+    
+    width: rem(314);
+    
+    @include below($mobile) {
+        top: rem(40);
+        left: rem(16);
+    
+        width: rem(180)
+    }
+    
+    &__img {
+        width: 100%;
+        
+    }
+}

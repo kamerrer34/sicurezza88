@@ -1,0 +1,115 @@
+.header-nav {
+    position: absolute;
+    top: rem(74);
+    right: rem(130);
+    z-index: 1000;
+    
+    &.active {
+        .header-nav__list {
+            top: 0;
+        }
+    
+        .header-nav__btn {
+            &:before {
+                transform: rotate(45deg);
+            }
+            
+            &:after {
+                transform: rotate(-45deg);
+            }
+            
+            span {
+                display: none;
+            }
+        }
+    }
+    
+    @include below($mobile) {
+        top: 0;
+        right: 0;
+    
+        width: 100%;
+    }
+    
+    &__btn {
+        position: absolute;
+        top: rem(55);
+        right: rem(16);
+        z-index: 1;
+        
+        display: none;
+        width: rem(22);
+        height: rem(18);
+    
+        border: none;
+        outline: none;
+        background: none;
+    
+        @include below($mobile) {
+            display: block;
+        }
+    
+        &:before, &:after, span {
+            position: absolute;
+            left: 0;
+            
+            display: inline-block;
+            width: 100%;
+            height: rem(2);
+            content: '';
+            
+            background-color: #fff;
+            transform-origin: 0 50%;
+            transition: transform 0.3s;
+        }
+        
+        &:before {
+            top: 0;
+        }
+    
+        &:after {
+            bottom: 0;
+        }
+    
+        span {
+            top: rem(8);
+        }
+    }
+    
+    &__list {
+        @include list-reset();
+    
+        @include below($mobile) {
+            position: absolute;
+            left: 0;
+            top: rem(-250);
+            transition: top 0.25s;
+            
+            width: 100%;
+            padding-top: rem(30);
+            padding-bottom: rem(10);
+            
+            text-align: center;
+            background-color: $color-2;
+        }
+    }
+    
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: rem(24);
+    
+        @include below($mobile) {
+            display: block;
+            margin-left: 0;
+            margin-bottom: rem(20);
+        }
+    }
+    
+    &__link {
+        text-transform: uppercase;
+        font-size: rem(18);
+        letter-spacing: rem(1);
+        color: #fff;
+    }
+}

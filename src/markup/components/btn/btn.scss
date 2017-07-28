@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    width: rem(280);
+    height: rem(56);
+    border-radius: rem(28);
+    border: none;
+    outline: none;
+    
+    text-align: center;
+    font-size: rem(18);
+    line-height: (56/18);
+    font-weight: 700;
+    background-color: #fff;
+    color: $color-1;
+    box-shadow: 0 2px 40px rgba(255, 255, 255, 0.73);
+    
+    &_color_1{
+        background-color: $color-1;
+        color: #fff;
+    }
+}

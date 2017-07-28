@@ -1,0 +1,14 @@
+include ../s9-bnr/s9-bnr
+include ../s9-form/s9-form
+
+mixin s9(data)
+    +b.SECTION.s9.section
+        +e.H2.title Vuoi avere #[<br>] maggiori informazioni?
+
+        +e.P.text
+            | Compila il form con i tuoi dati e ricevi il catalogo in pdf: sarai ricontattato entro 24h da
+            | un nostro consulente per trovare la soluzione più efficace per le esigenze della tua azienda
+
+        +s9-bnr()
+
+        +s9-form(s9Form.main)

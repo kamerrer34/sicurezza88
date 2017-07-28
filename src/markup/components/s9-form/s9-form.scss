@@ -1,0 +1,210 @@
+.s9-form {
+    position: relative;
+    
+    display: block;
+    width: rem(980);
+    margin: 0 auto;
+    
+    @include below($mobile) {
+        width: auto;
+    }
+    
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        @include below($mobile) {
+            display: block;
+        }
+    }
+    
+    &__input {
+        display: flex;
+        flex-direction: column;
+        width: rem(480);
+        height: rem(56);
+        padding: 0 rem(30);
+        margin-bottom: rem(16);
+    
+        line-height: rem(56);
+        font-size: rem(24);
+        font-weight: bold;
+        color: #fff;
+    
+        border-radius: rem(50);
+        border: rem(4) solid transparent;
+        background-color: rgba(255, 255, 255, 0.26);
+        outline: none;
+        transition: background-color 0.25s, border-color 0.25s;
+    
+        @include below($mobile) {
+            display: block;
+            width: 100%;
+            height: rem(40);
+            padding: 0 rem(15);
+            border-width: rem(3);
+            
+            line-height: rem(40);
+            font-size: rem(16);
+        }
+        
+        &_textarea {
+            display: block;
+            width: 100%;
+            height: rem(300);
+            padding: rem(25) rem(30);
+            margin-bottom: rem(40);
+            border-radius: rem(32);
+            resize: none;
+            
+            font-size: rem(30);
+            line-height: (32/30);
+            
+            @include below($mobile) {
+                height: rem(190);
+                padding: rem(10) rem(15);
+                margin-bottom: rem(30);
+                border-radius: rem(22);
+                
+                font-size: rem(16);
+                line-height: (20/16);
+            }
+        }
+        
+        &.error {
+            background-color: transparent;
+            border-color: #de2c2c;
+            padding-right: rem(50);
+    
+            @include below($mobile) {
+                padding-right: rem(40);
+            }
+            
+            & + .s9-form__cross {
+                display: inline-block;
+            }
+        }
+        
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    
+    &__cross {
+        position: relative;
+        top: rem(20);
+        right: rem(46);
+        
+        display: none;
+        width: rem(16);
+        height: rem(16);
+        margin-right: rem(-16);
+        
+        cursor: pointer;
+    
+        @include below($mobile) {
+            top: rem(-44);
+            right: rem(16);
+            
+            margin-right: 0;
+            margin-bottom: rem(-16);
+            float: right;
+        }
+        
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__label {
+        position: relative;
+        
+        display: block;
+        margin-bottom: rem(16);
+    }
+    
+    &__check {
+        position: absolute;
+        top: rem(2);
+        
+        display: inline-block;
+        vertical-align: middle;
+        width: rem(24);
+        height: rem(24);
+        padding: rem(2);
+        border: rem(2) solid #fff;
+        border-radius: rem(4);
+        
+        .icon {
+            width: 100%;
+            height: 100%;
+            
+            fill: #fff;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+    }
+    
+    &__val {
+        position: relative;
+        
+        display: inline-block;
+        padding-left: rem(40);
+        
+        font-size: rem(16);
+        line-height: (32/16);
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+        
+        .link {
+            border-bottom: rem(2) solid;
+            padding-bottom: rem(2);
+            color: inherit;
+            transition: border-color 0.25s;
+            
+            &:hover{
+                border-color: transparent;
+            }
+        }
+    }
+    
+    &__checkbox {
+        display: none;
+        
+        &:checked + .s9-form__check .icon {
+            opacity: 1;
+        }
+    }
+    
+    &__text {
+        margin-top: rem(35);
+        margin-bottom: rem(30);
+        
+        text-align: center;
+        font-size: rem(20);
+        line-height: (32/20);
+        font-weight: 600;
+        color: #000;
+    
+        @include below($mobile) {
+            display: none;
+        }
+    }
+    
+    &__btn {
+        display: block;
+        margin: auto;
+        width: rem(302);
+        height: rem(72);
+        border-radius: rem(50);
+    
+        font-size: rem(30);
+        line-height: rem(72);
+    
+        @include below($mobile) {
+            margin-top: rem(100);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.s4-info {
+    
+    &__item {
+        display: flex;
+        width: rem(315);
+        justify-content: space-between;
+        align-items: center;
+    
+        @include below($mobile) {
+           margin-bottom: rem(30);
+        }
+        
+        &:nth-of-type(2n) {
+            margin-left: rem(105);
+    
+            @include below($mobile) {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        width: rem(80);
+        
+        .icon {
+            width: 100%;
+        }
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        width: rem(210);
+    
+        font-size: rem(16);
+        line-height: (20/16);
+        letter-spacing: rem(1);
+        font-weight: 700;
+        color: #4a4a4a;
+    }
+}

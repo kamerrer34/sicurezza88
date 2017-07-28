@@ -1,0 +1,13 @@
+include ../slider/slider
+
+mixin s1-slider(data)
+    +slider()
+        +b.s1-slider
+            - for (var x = 0; x < 3; x++)
+                +e.slide
+                    +e.info
+                        +e.title
+                            | Lorem Ipsum dolorem sit
+                        +e.text
+                            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            | accusantium doloremque laudantium

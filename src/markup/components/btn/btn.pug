@@ -1,0 +1,6 @@
+mixin btn(data)
+    -data = data || {}
+    -tag = data.tag || 'a'
+
+    +b(tag).btn(href=(tag === 'a' ? jv0 : false))&attributes(attributes)
+        block

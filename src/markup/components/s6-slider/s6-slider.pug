@@ -1,0 +1,27 @@
+include ../slider/slider
+include ../btn/btn
+
+mixin s6-slider(data)
+    +slider()
+        +b.s6-slider
+            each item in data.items
+                +e.slide
+                    if item.img
+                        +e.img(src='%=static=%img/assets/s6-slider/' + item.img)
+
+                    if item.title
+                        +e.title #{item.title}
+
+                    if item.pic
+                        +e.pic(src='%=static=%img/assets/s6-slider/' + item.pic)
+
+                    if item.btn
+                        +btn(href='#')._color_1.s6-slider__btn Ricevi il nostro catalogo
+
+                    if item.link || item.text
+                        +e.info
+                            if item.link
+                                +e.A.link(href='#') #{item.link}
+
+                            if item.text
+                                +e.text #{item.text}

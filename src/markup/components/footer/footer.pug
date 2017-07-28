@@ -1,0 +1,9 @@
+include ../footer-nav/footer-nav
+include ../footer-logo/footer-logo
+
+mixin footer(data)
+    +b.FOOTER.footer
+
+        +footer-nav()
+
+        +footer-logo()

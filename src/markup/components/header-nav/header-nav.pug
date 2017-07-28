@@ -1,0 +1,9 @@
+mixin header-nav(data)
+    +b.header-nav()&attributes(attributes)
+        +e.BUTTON.btn(type='button')
+            span
+
+        +e.UL.list
+            each item in data.items
+                +e.LI.item
+                    +e.A.link(href=item.href) #{item.text}

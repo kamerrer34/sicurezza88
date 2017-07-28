@@ -1,0 +1,29 @@
+extends ../layouts/default
+
+include ../components/header/header
+include ../components/s1/s1
+include ../components/s2/s2
+include ../components/s3/s3
+include ../components/s4/s4
+include ../components/s5/s5
+include ../components/s6/s6
+include ../components/s7/s7
+include ../components/s8/s8
+include ../components/s9/s9
+include ../components/footer/footer
+
+block vars
+    -pageSettings.title = 'Главная';
+
+block content
+    +header()
+    +s1()
+    +s2()
+    +s3()
+    +s4()
+    +s5()
+    +s6()
+    +s7()
+    +s8()
+    +s9()
+    +footer()

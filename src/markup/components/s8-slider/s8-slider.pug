@@ -1,0 +1,12 @@
+include ../slider/slider
+
+mixin s8-slider(data)
+    +slider()
+        +b.s8-slider
+            each item in data.items
+                +e.slide
+                    +e.inner
+                        +e.hour #{item.hour} #[<br>] ore
+                        +e.title #{item.title}
+                        +e.text #{item.text}
+                        +e.A.link(href='#') Scarica l'anteprima in pdf

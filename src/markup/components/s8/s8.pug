@@ -1,0 +1,16 @@
+include ../s8-slider/s8-slider
+include ../btn/btn
+
+mixin s8(data)
+    +b.SECTION.s8.section
+        +e.H2.title.section__title2._italic Formazione
+
+        +s8-slider(s8Slider.first)
+
+        +e.H2.title.section__title2._italic Addestramento
+
+        +s8-slider(s8Slider.second)
+
+        +e.subtitle Sei interessato ai nostri corsi?
+
+        +btn()._color_1.s8__btn Contattaci

@@ -1,0 +1,10 @@
+include ../icon/icon
+
+mixin s4-info(data)
+    +b.s4-info()&attributes(attributes)
+        each item in data.items
+            +e.item
+                +e.icon
+                    +icon({ icon: item.icon })
+
+                +e.text!= item.text

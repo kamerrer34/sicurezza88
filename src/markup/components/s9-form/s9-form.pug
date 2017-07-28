@@ -1,0 +1,25 @@
+include ../btn/btn
+include ../icon/icon
+
+mixin s9-form(data)
+    +b.FORM.s9-form()&attributes(attributes)
+        +e.inputs
+            each input in data.inputs
+                +e.INPUT.input(type='text', placeholder=input.place, class={'error': input.error})
+                +e.cross
+                    +icon({ icon: 'cross' })
+
+        +e.TEXTAREA.input._textarea(placeholder='Messaggio')
+
+        each checkbox in data.checkboxes
+            +e.LABEL.label
+                +e.INPUT.checkbox(type='checkbox')
+
+                +e.check
+                    +icon({ icon: 'cross' })
+
+                +e.SPAN.val!=checkbox.text
+
+        +e.text è stato inserito un valore non valido, la preghiamo di controllare
+
+        +btn({tag: 'button'}).s9-form__btn Invia

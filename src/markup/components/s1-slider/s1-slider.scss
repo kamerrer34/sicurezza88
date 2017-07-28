@@ -1,0 +1,59 @@
+.s1-slider {
+    position: relative;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    @include below($mobile) {
+        margin-left: rem(-15);
+        margin-right: rem(-15);
+    }
+    
+    &__slide {
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        width: rem(378);
+        height: rem(450);
+        
+        border-radius: rem(10);
+        background-color: #fff;
+        box-shadow: 0 2px 20px rgba(255, 85, 0, 0.21);
+    
+        @include below($mobile) {
+            width: rem(340);
+            margin: rem(15);
+        }
+    }
+    
+    &__info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        width: 100%;
+        padding: rem(24) rem(42);
+        text-align: center;
+    
+        @include below($mobile) {
+            padding: rem(20);
+        }
+    }
+    
+    &__title {
+        margin-bottom: rem(16);
+        
+        font-size: rem(18);
+        line-height: (26/18);
+        font-weight: bold;
+        color: #4a494a;
+    }
+    
+    &__text {
+        font-size: rem(14);
+        line-height: (16/14);
+        color: #949494;
+    }
+}

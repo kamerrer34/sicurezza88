@@ -1,0 +1,45 @@
+.slider {
+    &_default {
+        
+        .slick-slide {
+            outline: none;
+        }
+        
+        .slick-dots {
+            @include list-reset();
+            position: absolute;
+            left: 0;
+            bottom: rem(-25);
+            
+            width: 100%;
+            text-align: center;
+            
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 rem(2);
+                
+                &.slick-active {
+                    button {
+                        background-color: $color-1;
+                    }
+                }
+                
+                button {
+                    width: rem(18);
+                    height: rem(18);
+                    
+                    font-size: 0;
+                    
+                    border: 1px solid $color-1;
+                    border-radius: 50%;
+                    outline: none;
+                    background-color: transparent;
+                    transition: background-color 0.25s;
+                }
+            }
+        }
+        
+    }
+}
+

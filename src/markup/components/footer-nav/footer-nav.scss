@@ -1,0 +1,34 @@
+.footer-nav {
+    
+    &__list {
+        @include list-reset();
+        width: rem(680);
+    
+        @include below($mobile) {
+            width: rem(250);
+        }
+    }
+    
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: rem(40);
+        margin-bottom: rem(35);
+    
+        @include below($mobile) {
+            margin-right: rem(5);
+            margin-bottom: rem(8);
+        }
+    }
+    
+    &__link {
+        font-size: rem(16);
+        line-height: 1;
+        font-weight: 700;
+        color: #4a4a4a;
+    
+        @include below($mobile) {
+            font-size: rem(12);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/* Your custom fonts here */
+
+/* Example
+
+@include font-face('Open Sans', '../fonts/OpenSans-Italic', normal, italic, $exts: woff woff2 ttf);
+
+// Var for using custom font
+$font-1: 'Open Sans', Helvetica, Arial, sans-serif;
+*/
+
+@include font-face('Montserrat', '../fonts/montserrat-regular-webfont', normal, $exts: eot woff ttf);
+@include font-face('Montserrat', '../fonts/montserrat-light-webfont', 300, $exts: eot woff ttf);
+@include font-face('Montserrat', '../fonts/montserrat-semibold-webfont', 600, $exts: eot woff ttf);
+@include font-face('Montserrat', '../fonts/montserrat-bold-webfont', 700, $exts: eot woff ttf);
+
+@include font-face('SourceSansPro', '../fonts/sourcesanspro-semibold-webfont', 600, $exts: eot woff ttf);
+@include font-face('SourceSansPro', '../fonts/sourcesanspro-semiboldit-webfont', 600, italic, $exts: eot woff ttf);
+
+$font-1: 'Montserrat', Helvetica, Arial, sans-serif;
+$font-2: 'SourceSansPro', Helvetica, Arial, sans-serif;

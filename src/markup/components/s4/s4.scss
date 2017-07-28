@@ -1,0 +1,37 @@
+.s4 {
+    padding-top: rem(40);
+    padding-bottom: rem(50);
+    
+    @include below($mobile) {
+        padding-top: 0;
+        padding-bottom: rem(30);
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        @include below($mobile) {
+            display: block;
+        }
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+    
+        @include below($mobile) {
+            display: block;
+        }
+        
+        &_text {
+            width: rem(580);
+            
+            @include below($mobile) {
+                width: auto;
+                margin-bottom: rem(45);
+            }
+        }
+    }
+}

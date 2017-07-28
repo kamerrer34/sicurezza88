@@ -1,0 +1,35 @@
+.s2 {
+    padding-top: rem(20);
+    padding-bottom: rem(90);
+    
+    @include below($mobile) {
+        padding-bottom: rem(40);
+    }
+    
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    
+        @include below($mobile) {
+            display: block;
+        }
+    }
+    
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: rem(580);
+    
+        @include below($mobile) {
+            display: block;
+            width: auto;
+        }
+    }
+    
+    &__title {
+        &_single:before {
+            display: block;
+            content: '\00A0';
+        }
+    }
+}

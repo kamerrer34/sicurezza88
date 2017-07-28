@@ -1,0 +1,44 @@
+.footer-logo {
+    position: absolute;
+    top: rem(35);
+    right: 0;
+    
+    @include below($mobile) {
+        top: rem(14);
+        right: rem(16);
+    }
+    
+    .icon_logo {
+        width: rem(212);
+        height: auto;
+
+        @include below($mobile) {
+            display: none;
+        }
+    }
+
+    .icon_logo-m {
+        display: none;
+        width: rem(30);
+        height: auto;
+        
+        @include below($mobile) {
+            display: block;
+        }
+    }
+    
+    &__text {
+        margin-top: rem(6);
+        
+        text-align: center;
+        font-size: rem(12);
+        font-weight: 700;
+        line-height: 1;
+        
+        color: #9b9b9b;
+    
+        @include below($mobile) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+// Common styles of the project
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: $font-1;
+    font-size: 1.1vw;
+    
+    @include below($mobile) {
+        font-size: 4.1vw;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    position: relative;
+    
+    padding: 0 rem(130);
+    
+    @include below($mobile) {
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+    
+    &__title {
+        position: relative;
+        
+        margin: 0;
+        
+        font-size: rem(50);
+        line-height: (56/50);
+        font-weight: 700;
+        letter-spacing: rem(1);
+        color: #fff;
+    
+        @include below($mobile) {
+            font-size: rem(25);
+            line-height: (32/25);
+        }
+    
+        &:before {
+            position: absolute;
+            top: rem(-35);
+            left: 0;
+            
+            display: block;
+            width: rem(85);
+            height: rem(8);
+            
+            content: '';
+            background-color: #fff;
+    
+            @include below($mobile) {
+                top: rem(-12);
+                
+                width: rem(34);
+                height: rem(5);
+            }
+        }
+    }
+    
+    &__title2 {
+        margin-top: 0;
+        margin-bottom: rem(40);
+        
+        font-family: $font-2;
+        font-size: rem(48);
+        line-height: (56/48);
+        font-weight: 600;
+        letter-spacing: rem(1);
+        color: $color-1;
+    
+        @include below($mobile) {
+            margin-bottom: rem(25);
+            
+            font-size: rem(24);
+            line-height: 1;
+        }
+        
+        &_italic {
+            font-style: italic;
+    
+            @include below($mobile) {
+                font-style: normal;
+            }
+        }
+    }
+    
+    &__text {
+        margin: 0;
+        
+        font-size: rem(18);
+        line-height: (28/18);
+        letter-spacing: rem(1);
+        text-indent: rem(30);
+        color: #959595;
+    
+        @include below($mobile) {
+            font-size: rem(14);
+            line-height: (28/14);
+            text-indent: rem(25);
+        }
+    }
+    
+    &__list {
+        @include list-reset();
+        margin-top: rem(30);
+        margin-bottom: 0;
+        padding-left: rem(30);
+    
+        @include below($mobile) {
+            margin-top: rem(25);
+            padding-left: rem(25);
+        }
+    }
+    
+    &__list-item {
+        margin-bottom: rem(30);
+        
+        font-family: $font-2;
+        font-size: rem(20);
+        font-weight: 600;
+        line-height: (30/20);
+        letter-spacing: rem(1);
+        color: #39393a;
+    
+        @include below($mobile) {
+            margin-bottom: rem(20);
+            
+            font-size: rem(16);
+            line-height: (28/16);
+        }
+    }
+}

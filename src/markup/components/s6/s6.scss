@@ -1,0 +1,21 @@
+.s6 {
+    z-index: 1;
+    
+    margin-bottom: rem(-5);
+    
+    @include below($mobile) {
+        margin-bottom: rem(-10);
+    }
+    
+    &__title {
+        margin-top: rem(-50);
+    }
+    
+    &__text {
+        width: rem(590);
+    
+        @include below($mobile) {
+            width: auto;
+        }
+    }
+}

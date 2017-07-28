@@ -1,0 +1,25 @@
+.footer {
+    position: relative;
+    
+    width: rem(980);
+    margin: 0 auto;
+    padding: rem(40) 0 rem(150);
+    
+    @include below($mobile) {
+        width: auto;
+        overflow: hidden;
+        padding: rem(10) rem(16) rem(70);
+    
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: rem(-50);
+        
+            width: 100%;
+            height: rem(100);
+            content: '';
+            background-color: $color-1;
+            transform: skewY(-5deg);
+        }
+    }
+}

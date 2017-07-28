@@ -1,0 +1,115 @@
+.s6-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: rem(35);
+    
+    @include below($mobile) {
+        flex-wrap: nowrap;
+        margin: rem(20) rem(-15) rem(15);
+    }
+    
+    &__slide {
+        position: relative;
+        
+        display: flex;
+        flex-direction: column;
+        width: rem(379);
+        height: rem(460);
+        margin-bottom: rem(35);
+        overflow: hidden;
+        
+        border-radius: rem(10);
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 2px 40px rgba(30, 119, 225, 0.18);
+        transition: margin 0.25s;
+    
+        @include below($mobile) {
+            left: rem(-35);
+            
+            width: rem(310);
+            height: rem(410);
+            margin: rem(15);
+            margin-left: rem(50);
+        }
+        
+        &.slick-current + .s6-slider__slide {
+            margin-left: 0;
+        }
+    }
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        width: 100%;
+        height: rem(118);
+        padding: rem(16);
+    
+        @include below($mobile) {
+            height: rem(115);
+            padding: rem(12);
+        }
+    }
+    
+    &__link {
+        display: block;
+    
+        font-size: rem(20);
+        line-height: 1;
+        font-weight: bold;
+        color: $color-1;
+    }
+    
+    &__text {
+        margin-top: rem(10);
+        
+        font-size: rem(14);
+        line-height: (20/14);
+        color: #959595;
+    
+        @include below($mobile) {
+            font-size: rem(13);
+            line-height: (20/13);
+        }
+    }
+    
+    &__title {
+        padding: rem(41) rem(46) rem(36);
+    
+        font-size: rem(20);
+        line-height: (24/20);
+        font-weight: bold;
+        color: #4a4a4a;
+    
+        @include below($mobile) {
+            padding: rem(20);
+        }
+    }
+    
+    &__pic {
+        width: rem(278);
+        margin-left: 32%;
+        margin-bottom: rem(15);
+    
+        @include below($mobile) {
+            width: rem(250);
+            margin-left: 30%;
+        }
+    }
+    
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .slick-dots {
+        display: none;
+    }
+}
