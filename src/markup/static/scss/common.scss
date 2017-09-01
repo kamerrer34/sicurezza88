@@ -8,11 +8,19 @@
 
 html, body {
     height: 100%;
+    
     font-family: $font-1;
     font-size: 1.1vw;
     
     @include below($mobile) {
         font-size: 4.1vw;
+    }
+}
+
+body {
+    
+    &.open-popup {
+        overflow: hidden;
     }
 }
 

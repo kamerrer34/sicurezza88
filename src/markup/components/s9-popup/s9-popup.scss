@@ -1,0 +1,74 @@
+.s9-popup-wrap {
+    display: none;
+}
+
+.s9-popup {
+    width: rem(976);
+    margin: auto;
+    padding: rem(120) rem(55) rem(55);
+    border-radius: rem(2);
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+    
+    @include below($mobile) {
+        width: rem(310);
+        padding: rem(60) rem(25) rem(25);
+    }
+    
+    &__title {
+        margin-bottom: rem(60);
+        line-height: (56/50);
+        font-size: rem(50);
+        font-weight: 700;
+        color: $color-1;
+    
+        @include below($mobile) {
+            margin-bottom: rem(30);
+            font-size: rem(25);
+            line-height: (32/25);
+        }
+    }
+    
+    &__text {
+        font-family: $font-2;
+        font-size: rem(30);
+        line-height: (40/30);
+        font-weight: 600;
+        letter-spacing: rem(1);
+        color: #959595;
+    
+        @include below($mobile) {
+            font-size: rem(14);
+            line-height: (28/14);
+        }
+    }
+    
+    &__link {
+        color: inherit;
+        text-decoration: underline;
+        
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    
+    &__btns {
+        margin-top: rem(120);
+        
+        @include below($mobile) {
+            margin-top: rem(40);
+        }
+    }
+    
+    &__btn {
+        width: rem(240);
+        margin: 0 rem(15);
+        padding: 0;
+        vertical-align: middle;
+    
+        @include below($mobile) {
+            margin: rem(20) 0 0;
+        }
+    }
+}

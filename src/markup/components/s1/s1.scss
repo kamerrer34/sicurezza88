@@ -1,6 +1,6 @@
 .s1 {
     padding-top: rem(75);
-    padding-bottom: rem(130);
+    padding-bottom: rem(25);
     
     @include below($mobile) {
         padding-top: rem(30);

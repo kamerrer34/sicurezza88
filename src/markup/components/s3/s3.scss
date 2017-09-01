@@ -5,7 +5,6 @@
     @include below($mobile) {
         padding-top: rem(20);
         padding-bottom: rem(290);
-        overflow: hidden;
     }
     
     &:before {
@@ -34,7 +33,7 @@
         @include below($mobile) {
             bottom: rem(-34);
     
-            width: rem(285);
+            width: rem(295);
         }
     }
     
@@ -46,7 +45,7 @@
         width: rem(620);
     
         @include below($mobile) {
-            right: rem(-10);
+            right: 0;
             bottom: rem(5);
             
             width: rem(335);

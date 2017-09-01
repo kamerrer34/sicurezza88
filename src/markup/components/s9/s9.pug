@@ -1,8 +1,9 @@
 include ../s9-bnr/s9-bnr
 include ../s9-form/s9-form
+include ../s9-popup/s9-popup
 
 mixin s9(data)
-    +b.SECTION.s9.section
+    +b.SECTION.s9.section#contattaci
         +e.H2.title Vuoi avere #[<br>] maggiori informazioni?
 
         +e.P.text
@@ -12,3 +13,5 @@ mixin s9(data)
         +s9-bnr()
 
         +s9-form(s9Form.main)
+
+        +s9-popup()

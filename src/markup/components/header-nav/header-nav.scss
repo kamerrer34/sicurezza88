@@ -111,5 +111,11 @@
         font-size: rem(18);
         letter-spacing: rem(1);
         color: #fff;
+        transition: font-weight 0.25s;
+        
+        &:hover {
+            font-weight: 700;
+            color: #ff5500;
+        }
     }
 }

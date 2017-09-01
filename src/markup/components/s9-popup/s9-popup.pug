@@ -1,0 +1,12 @@
+mixin s9-popup(data)
+    .s9-popup-wrap
+        +b.s9-popup#popup
+            +e.title Grazie per averci contattato
+            +e.text
+                | Il nostro personale la contatterà il prima possibile, #[<br>] nel frattempo scopra di più su
+                | ambienti confinati #[<br>] visitando il sito di #{''}
+                +e.A.link(href="http://www.sistemianticaduta88.com/accesso-spazi-confinati/") Sicurezza88
+
+            +e.btns
+                +btn(href=jv0)._color_2.s9-popup__btn.js-popup-close chiudi
+                +btn(href='http://www.sistemianticaduta88.com/accesso-spazi-confinati/')._color_1.s9-popup__btn vai a Sicurezza88

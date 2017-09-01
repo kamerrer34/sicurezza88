@@ -11,7 +11,6 @@
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
 
-
     <!--[if (gt IE 9)|!(IE)]><!-->
     <link href="static/css/main.min.css" rel="stylesheet" type="text/css">
     <!--<![endif]-->
@@ -69,36 +68,54 @@
         </div>
         <a class="btn header__btn" href="#">Scegli la sicurezza</a>
     </header>
-    <section class="s1 section">
+    <section class="s1 section" id="spazi-confinati">
         <h2 class="s1__title section__title">SPAZI CONFINATI
             <br>che cosa sono esattamente
         </h2>
-        <div class="slider slider_default">
+        <div class="slider slider_default slider_desktop">
             <div class="s1-slider">
                 <div class="s1-slider__slide">
                     <div class="s1-slider__info">
+                        <img class="s1-slider__img" src="static/img/assets/s1-slider/img-1.svg" alt="" role="presentation" />
                         <div class="s1-slider__title">Lorem Ipsum dolorem sit
                         </div>
-                        <div class="s1-slider__text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        <div class="s1-slider__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                         </div>
                     </div>
                 </div>
                 <div class="s1-slider__slide">
                     <div class="s1-slider__info">
+                        <img class="s1-slider__img" src="static/img/assets/s1-slider/img-2.svg" alt="" role="presentation" />
                         <div class="s1-slider__title">Lorem Ipsum dolorem sit
                         </div>
-                        <div class="s1-slider__text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        <div class="s1-slider__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                         </div>
                     </div>
                 </div>
                 <div class="s1-slider__slide">
                     <div class="s1-slider__info">
+                        <img class="s1-slider__img" src="static/img/assets/s1-slider/img-3.svg" alt="" role="presentation" />
                         <div class="s1-slider__title">Lorem Ipsum dolorem sit
                         </div>
-                        <div class="s1-slider__text">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        <div class="s1-slider__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        </div>
+                    </div>
+                </div>
+                <div class="s1-slider__slide">
+                    <div class="s1-slider__info">
+                        <img class="s1-slider__img" src="static/img/assets/s1-slider/img-4.svg" alt="" role="presentation" />
+                        <div class="s1-slider__title">Lorem Ipsum dolorem sit
+                        </div>
+                        <div class="s1-slider__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                        </div>
+                    </div>
+                </div>
+                <div class="s1-slider__slide">
+                    <div class="s1-slider__info">
+                        <img class="s1-slider__img" src="static/img/assets/s1-slider/img-5.svg" alt="" role="presentation" />
+                        <div class="s1-slider__title">Lorem Ipsum dolorem sit
+                        </div>
+                        <div class="s1-slider__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
                         </div>
                     </div>
                 </div>
@@ -163,7 +180,7 @@
             </div>
         </div>
     </section>
-    <section class="s3 section">
+    <section class="s3 section" id="le-soluzioni">
         <h2 class="s3__title section__title">LE NOSTRE
             <br>SOLUZIONI
             <br>per gli ambienti
@@ -326,6 +343,7 @@
                     </div>
                 </div>
                 <div class="s6-slider__slide">
+                    <img class="s6-slider__img" src="static/img/assets/s6-slider/img3.png" alt="" role="presentation" />
                     <div class="s6-slider__info">
                         <a class="s6-slider__link" href="#">Tripodi</a>
                         <div class="s6-slider__text">Ideali per permettere di lavorare in sicurezza durante le fasi di discesa e stazionamento all interno
@@ -360,7 +378,7 @@
             </div>
         </div>
     </section>
-    <section class="s7 section">
+    <section class="s7 section" id="i-corsi">
         <div class="s7__container">
             <div class="s7__column">
                 <h2 class="s7__title section__title">CORSI DI
@@ -379,10 +397,11 @@
                     <b>direttamente presso la tua sede aziendale</b>. Periodicamente teniamo online dei webinar gratuiti per
                     affrontare e approfondire i diversi aspetti della tematica.
                 </p>
+                <a class="btn s7__btn js-more-info" href="javascript:void(0)">Scopri i nostri corsi</a>
             </div>
         </div>
     </section>
-    <section class="s8 section">
+    <section class="s8 section js-hide-info">
         <h2 class="s8__title section__title2 section__title2_italic">Formazione
         </h2>
         <div class="slider slider_default">
@@ -479,7 +498,7 @@
         </div>
         <a class="btn btn_color_1 s8__btn" href="javascript:void(0)">Contattaci</a>
     </section>
-    <section class="s9 section">
+    <section class="s9 section" id="contattaci">
         <h2 class="s9__title">Vuoi avere
             <br>maggiori informazioni?
         </h2>
@@ -613,64 +632,43 @@
             <button class="btn s9-form__btn">Invia
             </button>
         </form>
+        <div class="s9-popup-wrap">
+            <div class="s9-popup" id="popup">
+                <div class="s9-popup__title">Grazie per averci contattato
+                </div>
+                <div class="s9-popup__text">Il nostro personale la contatterà il prima possibile,
+                    <br>nel frattempo scopra di più su ambienti confinati
+                    <br>visitando il sito di
+                    <a class="s9-popup__link" href="http://www.sistemianticaduta88.com/accesso-spazi-confinati/">Sicurezza88</a>
+                </div>
+                <div class="s9-popup__btns">
+                    <a class="btn btn_color_2 s9-popup__btn js-popup-close" href="javascript:void(0)">chiudi</a>
+                    <a class="btn btn_color_1 s9-popup__btn" href="http://www.sistemianticaduta88.com/accesso-spazi-confinati/">vai a Sicurezza88</a>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        <div class="footer-nav">
-            <ul class="footer-nav__list">
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-                <li class="footer-nav__item">
-                    <a class="footer-nav__link" href="#">Lorem</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-logo">
-            <svg class="icon icon_logo " width="213px" height="48px">
-                <use xlink:href="svg-symbols.svg#logo"></use>
-            </svg>
+        <div class="footer__inner">
+            <div class="footer__text">Copyright 2017 Sicurezza88
+                <br>Tel: +39 055 822 8172
+                <a class="footer__link" href="mailto:info@sicurezza88.com" target="_blank">info@sicurezza88.com
+                    <br>
+                </a>
+                <a class="footer__link" href="http://www.sistemianticaduta88.com/" target="_blank">Chi Siamo</a>
+            </div>
+            <div class="footer-logo">
+                <a class="footer-logo__link" href="http://www.sistemianticaduta88.com/" target="_blank">
+                    <svg class="icon icon_logo " width="213px" height="48px">
+                        <use xlink:href="svg-symbols.svg#logo"></use>
+                    </svg>
 
-            <svg class="icon icon_logo-m " width="31px" height="47px">
-                <use xlink:href="svg-symbols.svg#logo-m"></use>
-            </svg>
-
-            <div class="footer-logo__text">Proteggi la tua vita sul lavoro
+                    <svg class="icon icon_logo-m " width="31px" height="47px">
+                        <use xlink:href="svg-symbols.svg#logo-m"></use>
+                    </svg>
+                </a>
+                <div class="footer-logo__text">Proteggi la tua vita sul lavoro
+                </div>
             </div>
         </div>
     </footer>

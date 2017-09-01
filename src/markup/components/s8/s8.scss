@@ -1,9 +1,19 @@
 .s8 {
-    padding-top: rem(50);
-    padding-bottom: rem(100);
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.25s, padding 0.25s;
     
     @include below($mobile) {
         padding-top: 0;
+        
+    }
+    
+    &.open {
+        height: rem(1255);
+        padding-top: rem(50);
+        padding-bottom: rem(100);
     }
     
     &__subtitle {

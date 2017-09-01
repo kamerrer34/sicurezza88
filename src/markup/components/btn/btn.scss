@@ -18,4 +18,8 @@
         background-color: $color-1;
         color: #fff;
     }
+    
+    &_color_2{
+       border: rem(3) solid $color-1;
+    }
 }

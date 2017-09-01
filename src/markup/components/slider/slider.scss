@@ -5,6 +5,31 @@
             outline: none;
         }
         
+        .slick-arrow {
+            position: absolute;
+            top: rem(200);
+            
+            width: rem(50);
+            height: rem(50);
+            padding: 0;
+            
+            font-size: 0;
+            border: none;
+            outline: none;
+            background: none;
+            background-size: rem(50);
+            
+            &.slick-prev {
+                left: rem(-55);
+                background-image: url(%=static=%assets/slider/arr-l.svg);
+            }
+            
+            &.slick-next {
+                right: rem(-55);
+                background-image: url(%=static=%assets/slider/arr-r.svg);
+            }
+        }
+        
         .slick-dots {
             @include list-reset();
             position: absolute;
@@ -39,7 +64,6 @@
                 }
             }
         }
-        
     }
 }
 

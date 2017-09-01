@@ -4,6 +4,7 @@
     
     display: flex;
     justify-content: space-between;
+    margin: rem(-11);
     
     @include below($mobile) {
         margin-left: rem(-15);
@@ -16,12 +17,13 @@
         display: flex;
         flex-direction: column;
         width: rem(378);
-        height: rem(450);
+        height: rem(460);
+        margin: rem(11);
         
         border-radius: rem(10);
         background-color: #fff;
         box-shadow: 0 2px 20px rgba(255, 85, 0, 0.21);
-    
+        
         @include below($mobile) {
             width: rem(340);
             margin: rem(15);
@@ -34,7 +36,7 @@
         bottom: 0;
     
         width: 100%;
-        padding: rem(24) rem(42);
+        padding: rem(24) rem(20);
         text-align: center;
     
         @include below($mobile) {
@@ -43,7 +45,9 @@
     }
     
     &__title {
+        margin-top: rem(20);
         margin-bottom: rem(16);
+        padding: 0 rem(20);
         
         font-size: rem(18);
         line-height: (26/18);
@@ -52,8 +56,15 @@
     }
     
     &__text {
+        padding: 0 rem(20);
         font-size: rem(14);
         line-height: (16/14);
         color: #949494;
+    }
+    
+    &__img {
+        max-width: 100%;
+        max-height: rem(280);
+        margin: auto;
     }
 }

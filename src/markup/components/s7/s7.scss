@@ -53,4 +53,13 @@
     &__text {
         color: #fff;
     }
+    
+    &__btn {
+        margin-top: rem(50);
+    
+        @include below($mobile) {
+            margin-top: rem(40);
+            margin-bottom: rem(10);
+        }
+    }
 }
