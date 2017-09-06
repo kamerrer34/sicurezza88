@@ -18,7 +18,7 @@
     &__column {
         display: flex;
         flex-direction: column;
-        width: rem(580);
+        width: rem(570);
     
         @include below($mobile) {
             display: block;

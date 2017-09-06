@@ -13,6 +13,12 @@ html(lang='ru')
     include ../components/head/head
 
     body
+        // Google Tag Manager (noscript)
+        noscript
+            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-5ST9VSG", height="0", width="0", style="display:none;visibility:hidden")
+        // End Google Tag Manager (noscript)
+
+
         block content
 
         script(src='%=static=%js/vendor%=min=%.js')

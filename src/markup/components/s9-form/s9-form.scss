@@ -123,6 +123,12 @@
         
         display: block;
         margin-bottom: rem(16);
+        
+        &.error {
+            .s9-form__check {
+                border-color: #de2c2c;
+            }
+        }
     }
     
     &__check {
@@ -179,6 +185,7 @@
     }
     
     &__text {
+        display: none;
         margin-top: rem(35);
         margin-bottom: rem(30);
         
@@ -201,7 +208,7 @@
         border-radius: rem(50);
     
         font-size: rem(30);
-        line-height: rem(72);
+        line-height: rem(70);
     
         @include below($mobile) {
             margin-top: rem(100);

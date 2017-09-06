@@ -2,31 +2,32 @@ include ../btn/btn
 
 mixin s5(data)
     +b.SECTION.s5.section
-        +e.container
-            +e.column
-                +e.H2.title.section__title2
-                    | Il tuo contesto lavorativo #[<br>] rientra negli spazi #[<br>] confinati?
+        .container
+            +e.container
+                +e.column
+                    +e.H2.title.section__title2
+                        | Il tuo contesto lavorativo #[<br>] rientra negli spazi #[<br>] confinati?
 
-                +e.P.text.section__text
-                    | Se nell’elenco ritrovi uno o più dei luoghi di lavoro della tua azienda, allora
-                    | l’adozione di specifiche misure di sicurezza è #[<b>indispensabile</b>] e puoi
-                    | rivolgerti a noi per conoscere le soluzioni disponibili.
+                    +e.P.text.section__text
+                        | Se nell’elenco ritrovi uno o più dei luoghi di lavoro della tua azienda, allora
+                        | l’adozione di specifiche misure di sicurezza è #[<b>indispensabile</b>] e puoi
+                        | rivolgerti a noi per conoscere le soluzioni disponibili.
 
-                +e.P.text.section__text
-                    | #[<b>Se non sei certo</b>] se i tuoi ambienti di lavoro rientrino nella categoria
-                    | degli spazi confinati, contattaci e saremo felici di chiarire i tuoi dubbi.
+                    +e.P.text.section__text
+                        | #[<b>Se non sei certo</b>] se i tuoi ambienti di lavoro rientrino nella categoria
+                        | degli spazi confinati, contattaci e saremo felici di chiarire i tuoi dubbi.
 
-                +btn(href='#').s5__btn Richiedi una consulenza
+                    +btn(href='#contattaci').s5__btn.js-anchor-link Richiedi una consulenza
 
-            +e.column
-                +e.UL.list
-                    +e.LI.item Serbatoi
-                    +e.LI.item Pozzi
-                    +e.LI.item Silos
-                    +e.LI.item Cisterne aperte
-                    +e.LI.item Vasche di decantazione e smaltimento rifiuti
-                    +e.LI.item Condotte
-                    +e.LI.item Camere di combustione
-                    +e.LI.item Ambienti con ventilazione insufficiente o assente
-                    +e.LI.item Reti fognarie
-                    +e.LI.item Sistemi di drenaggio Impianti di depurazione
+                +e.column
+                    +e.UL.list
+                        +e.LI.item Serbatoi
+                        +e.LI.item Pozzi
+                        +e.LI.item Silos
+                        +e.LI.item Cisterne aperte
+                        +e.LI.item Vasche di decantazione e smaltimento rifiuti
+                        +e.LI.item Condotte
+                        +e.LI.item Camere di combustione
+                        +e.LI.item Ambienti con ventilazione insufficiente o assente
+                        +e.LI.item Reti fognarie
+                        +e.LI.item Sistemi di drenaggio Impianti di depurazione

@@ -5,15 +5,15 @@ mixin s9-form(data)
     +b.FORM.s9-form()&attributes(attributes)
         +e.inputs
             each input in data.inputs
-                +e.INPUT.input(type='text', placeholder=input.place, class={'error': input.error})
+                +e.INPUT.input.data__input(type='text', name=input.name, placeholder=input.place)
                 +e.cross
                     +icon({ icon: 'cross' })
 
-        +e.TEXTAREA.input._textarea(placeholder='Messaggio')
+        +e.TEXTAREA.input._textarea.data__input(name='messaggio', placeholder='Messaggio')
 
         each checkbox in data.checkboxes
             +e.LABEL.label
-                +e.INPUT.checkbox(type='checkbox')
+                +e.INPUT.checkbox(type='checkbox', name=checkbox.name, class={'data__input': checkbox.input})
 
                 +e.check
                     +icon({ icon: 'cross' })

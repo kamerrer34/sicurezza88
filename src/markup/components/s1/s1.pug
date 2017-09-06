@@ -2,6 +2,7 @@ include ../s1-slider/s1-slider
 
 mixin s1(data)
     +b.SECTION.s1.section#spazi-confinati
-        +e.H2.title.section__title SPAZI CONFINATI #[<br>] che cosa sono esattamente
+        .container
+            +e.H2.title.section__title SPAZI CONFINATI #[<br>] che cosa sono esattamente
 
-        +s1-slider(s1Slider.main)
+            +s1-slider(s1Slider.main)

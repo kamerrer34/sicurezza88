@@ -8,12 +8,18 @@
 
 html, body {
     height: 100%;
-    
+}
+
+html {
     font-family: $font-1;
-    font-size: 1.1vw;
+    font-size: 16px;
+    
+    @include below($desktop) {
+        font-size: 16 / 1440 * 100 + vw;
+    }
     
     @include below($mobile) {
-        font-size: 4.1vw;
+        font-size: 16 / 375 * 100 + vw;
     }
 }
 
@@ -30,8 +36,6 @@ a {
 
 .section {
     position: relative;
-    
-    padding: 0 rem(130);
     
     @include below($mobile) {
         padding-left: rem(16);
@@ -146,5 +150,15 @@ a {
             font-size: rem(16);
             line-height: (28/16);
         }
+    }
+}
+
+.container {
+    position: relative;
+    width: rem(1180);
+    margin: auto;
+    
+    @include below($mobile) {
+        width: 100%;
     }
 }

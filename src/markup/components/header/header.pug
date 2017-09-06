@@ -3,25 +3,26 @@ include ../header-nav/header-nav
 include ../btn/btn
 mixin header(data)
     +b.HEADER.header()&attributes(attributes)
-        +logo()
-        +header-nav(headerNav.main)
-        +e.H1.title.section__title
-            | La garanzia della sicurezza negli spazi confinati
+        .container
+            +logo()
+            +header-nav(headerNav.main)
+            +e.H1.title.section__title
+                | La garanzia della sicurezza negli spazi confinati
 
-        +e.text
-            +e.P.paragraph
-                span
-                    | Alcuni luoghi lavorativi hanno caratteristiche che li rendono particolarmente
-                    | pericolosi per l’incolumità di chi ci lavora:
-            +e.P.paragraph
-                span
-                    | #[<b>è il</b>] caso degli #[<b>spazi confinati</b>].
-            +e.P.paragraph
-                span
-                    | Tramite attività di #[<b>consulenza</b>] e #[<b>formazione</b>] e la fornitura di
-                    | #[<b>attrezzature specifiche</b>], Sicurezza88 affianca le imprese affinché possano
-                    | garantire la massima sicurezza nel rispetto degli obblighi di legge e portare avanti
-                    | il loro sviluppo sostenibile.
+            +e.text
+                +e.P.paragraph
+                    span
+                        | Alcuni luoghi lavorativi hanno caratteristiche che li rendono particolarmente
+                        | pericolosi per l’incolumità di chi ci lavora:
+                +e.P.paragraph
+                    span
+                        | #[<b>è il</b>] caso degli #[<b>spazi confinati</b>].
+                +e.P.paragraph
+                    span
+                        | Tramite attività di #[<b>consulenza</b>] e #[<b>formazione</b>] e la fornitura di
+                        | #[<b>attrezzature specifiche</b>], Sicurezza88 affianca le imprese affinché possano
+                        | garantire la massima sicurezza nel rispetto degli obblighi di legge e portare avanti
+                        | il loro sviluppo sostenibile.
 
-        +btn(href='#').header__btn
-            | Scegli la sicurezza
+            +btn(href='#spazi-confinati').header__btn.js-anchor-link
+                | Scegli la sicurezza

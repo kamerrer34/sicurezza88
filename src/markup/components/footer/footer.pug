@@ -2,11 +2,12 @@ include ../footer-logo/footer-logo
 
 mixin footer(data)
     +b.FOOTER.footer
-        +e.inner
-            +e.text
-                | Copyright 2017 Sicurezza88 #[<br>]
-                | Tel: +39 055 822 8172 #{''}
-                +e.A.link(href="mailto:info@sicurezza88.com", target="_blank") info@sicurezza88.com #[<br>]
-                +e.A.link(href="http://www.sistemianticaduta88.com/", target="_blank") Chi Siamo
+        .container
+            +e.inner
+                +e.text
+                    | Copyright 2017 Sicurezza88 #[<br>]
+                    | Tel: +39 055 822 8172 #{''}
+                    +e.A.link(href="mailto:info@sicurezza88.com", target="_blank") info@sicurezza88.com #[<br>]
+                    +e.A.link(href="http://www.sistemianticaduta88.com/", target="_blank") Chi Siamo
 
-            +footer-logo()
+                +footer-logo()

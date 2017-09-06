@@ -2,11 +2,12 @@ include ../s6-slider/s6-slider
 
 mixin s6(data)
     +b.SECTION.s6.section
-        +e.H2.title.section__title2 Attrezzature
+        .container
+            +e.H2.title.section__title2 Attrezzature
 
-        +e.P.text.section__text
-            | Le attrezzature di sicurezza necessarie variano a seconda dei casi. Sicurezza88 offre,
-            | in vendita o a noleggio, una vasta gamma di soluzioni tecniche all’avanguardia tra cui
-            | bracci gru, tripodi e attrezzature speciali.
+            +e.P.text.section__text
+                | Le attrezzature di sicurezza necessarie variano a seconda dei casi. Sicurezza88 offre,
+                | in vendita o a noleggio, una vasta gamma di soluzioni tecniche all’avanguardia tra cui
+                | bracci gru, tripodi e attrezzature speciali.
 
-        +s6-slider(s6Slider.main)
+            +s6-slider(s6Slider.main)

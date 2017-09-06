@@ -5,10 +5,10 @@
     &:before {
         position: absolute;
         left: 0;
-        bottom: rem(-50);
+        bottom: rem(-60);
         
         width: 100%;
-        height: rem(110);
+        height: rem(120);
         content: '';
         background-color: $color-1;
         transform: skewY(-4deg);

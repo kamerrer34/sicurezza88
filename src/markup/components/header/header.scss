@@ -24,7 +24,7 @@
     &__title {
         position: absolute;
         top: rem(340);
-        left: rem(130);
+        left: 0;
         
         max-width: rem(460);
     
@@ -39,7 +39,7 @@
     &__text {
         position: absolute;
         top: rem(330);
-        right: rem(128);
+        right: 0;
         
         width: rem(580);
     
@@ -119,7 +119,7 @@
     &__btn{
         position: absolute;
         top: rem(724);
-        right: rem(430);
+        right: rem(290);
     
         @include below($mobile) {
             top: rem(625);

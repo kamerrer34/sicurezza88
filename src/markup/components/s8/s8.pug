@@ -3,14 +3,15 @@ include ../btn/btn
 
 mixin s8(data)
     +b.SECTION.s8.section.js-hide-info
-        +e.H2.title.section__title2._italic Formazione
+        .container
+            +e.H2.title.section__title2._italic Formazione
 
-        +s8-slider(s8Slider.first)
+            +s8-slider(s8Slider.first)
 
-        +e.H2.title.section__title2._italic Addestramento
+            +e.H2.title.section__title2._italic Addestramento
 
-        +s8-slider(s8Slider.second)
+            +s8-slider(s8Slider.second)
 
-        +e.subtitle Sei interessato ai nostri corsi?
+            +e.subtitle Sei interessato ai nostri corsi?
 
-        +btn()._color_1.s8__btn Contattaci
+            +btn(href='#contattaci')._color_1.s8__btn.js-anchor-link Contattaci

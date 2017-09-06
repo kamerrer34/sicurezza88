@@ -1,7 +1,7 @@
 .header-nav {
     position: absolute;
     top: rem(74);
-    right: rem(130);
+    right: 0;
     z-index: 1000;
     
     &.active {
@@ -114,7 +114,6 @@
         transition: font-weight 0.25s;
         
         &:hover {
-            font-weight: 700;
             color: #ff5500;
         }
     }

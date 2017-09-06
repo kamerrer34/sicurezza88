@@ -16,12 +16,12 @@ mixin s6-slider(data)
                         +e.pic(src='%=static=%img/assets/s6-slider/' + item.pic)
 
                     if item.btn
-                        +btn(href='#')._color_1.s6-slider__btn Ricevi il nostro catalogo
+                        +btn(href='#contattaci')._color_1.s6-slider__btn.js-anchor-link Ricevi il nostro catalogo
 
                     if item.link || item.text
                         +e.info
                             if item.link
-                                +e.A.link(href='#') #{item.link}
+                                +e.link #{item.link}
 
                             if item.text
                                 +e.text #{item.text}

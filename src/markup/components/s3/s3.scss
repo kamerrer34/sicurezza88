@@ -19,27 +19,29 @@
         transform: skewY(5deg);
     }
     
-    &:after {
-        position: absolute;
-        bottom: rem(-64);
-        right: 0;
+    &__container {
+        &:after {
+            position: absolute;
+            bottom: rem(-208);
+            right: 0;
         
-        width: rem(675);
-        height: rem(60);
-        content: '';
-        background-color: #fff;
-        transform: skewY(5deg);
-    
-        @include below($mobile) {
-            bottom: rem(-34);
-    
-            width: rem(295);
+            width: rem(675);
+            height: rem(60);
+            content: '';
+            background-color: #fff;
+            transform: skewY(5deg);
+        
+            @include below($mobile) {
+                bottom: rem(-34);
+            
+                width: rem(295);
+            }
         }
     }
     
     &__img {
         position: absolute;
-        bottom: rem(-30);
+        bottom: rem(-172);
         right: rem(130);
        
         width: rem(620);
