@@ -81,6 +81,11 @@
         
         font-size: rem(14);
         line-height: (20/14);
+        text-decoration: underline;
         color: $color-1;
+        
+        &:hover {
+            text-decoration: none;
+        }
     }
 }

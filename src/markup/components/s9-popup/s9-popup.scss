@@ -4,6 +4,7 @@
 
 .s9-popup {
     width: rem(976);
+    
     margin: auto;
     padding: rem(120) rem(55) rem(55);
     border-radius: rem(2);
@@ -16,7 +17,30 @@
         padding: rem(60) rem(25) rem(25);
     }
     
+    &_privacy {
+        max-height: rem(820);
+        overflow-y: auto;
+        text-align: left;
+    
+        @include below($mobile) {
+            max-height: 100%;
+        }
+        
+        .s9-popup__text,
+        .s9-popup__item {
+            margin-top: 0;
+            margin-bottom: rem(20);
+            line-height: (40/30);
+            font-size: rem(20);
+    
+            @include below($mobile) {
+                font-size: rem(14);
+            }
+        }
+    }
+    
     &__title {
+        margin-top: 0;
         margin-bottom: rem(60);
         line-height: (56/50);
         font-size: rem(50);
@@ -30,7 +54,8 @@
         }
     }
     
-    &__text {
+    &__text,
+    &__list {
         font-family: $font-2;
         font-size: rem(30);
         line-height: (40/30);

@@ -2,7 +2,7 @@ var data = {s9Form: {
     main: {
         inputs: [
             {
-                place: 'Nome',
+                place: 'Nome Cognome',
                 name: 'nome'
             },
             {
@@ -54,7 +54,7 @@ var data = {s9Form: {
                 input: true
             },
             {
-                text: 'Do il mio consenso alla  <a href="#" class="link">privacy</a>',
+                text: 'Do il mio consenso alla  <a href="javascript:void(0);" class="link js-open-privacy">privacy</a>',
                 name: 'privacy'
             }
         ]

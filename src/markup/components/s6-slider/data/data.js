@@ -14,7 +14,7 @@ var data = {s6Slider: {
             {
                 img: 'img3.png',
                 link: 'Tripodi',
-                text: 'Ideali per permettere di lavorare in sicurezza durante le fasi di discesa e stazionamento all interno di ambienti confinati.'
+                text: 'Ideali per permettere di lavorare in sicurezza durante le fasi di discesa e stazionamento all’interno di ambienti confinati.'
             },
             {
                 img: 'img4.png',

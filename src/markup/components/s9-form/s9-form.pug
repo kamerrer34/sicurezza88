@@ -3,6 +3,10 @@ include ../icon/icon
 
 mixin s9-form(data)
     +b.FORM.s9-form()&attributes(attributes)
+        input(type='hidden', name='source')
+        input(type='hidden', name='medium')
+        input(type='hidden', name='campaign')
+
         +e.inputs
             each input in data.inputs
                 +e.INPUT.input.data__input(type='text', name=input.name, placeholder=input.place)
@@ -14,12 +18,10 @@ mixin s9-form(data)
         each checkbox in data.checkboxes
             +e.LABEL.label
                 +e.INPUT.checkbox(type='checkbox', name=checkbox.name, class={'data__input': checkbox.input})
-
                 +e.check
-                    +icon({ icon: 'cross' })
-
                 +e.SPAN.val!=checkbox.text
 
-        +e.text è stato inserito un valore non valido, la preghiamo di controllare
+        +e.text.empty È stato inserito un valore non valido, la preghiamo di controllare
+        +e.text.privacy Per procede all`invio è necessario dare il proprio consenso alla privacy
 
         +btn({tag: 'button'}).s9-form__btn Invia

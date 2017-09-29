@@ -1,12 +1,112 @@
 mixin s9-popup(data)
     .s9-popup-wrap
-        +b.s9-popup#popup
+        +b.s9-popup#popup-success
             +e.title Grazie per averci contattato
             +e.text
-                | Il nostro personale la contatterà il prima possibile, #[<br>] nel frattempo scopra di più su
+                | Il nostro personale la contatterà il prima possibile, #[<br>] nel frattempo scopra di più sugli
                 | ambienti confinati #[<br>] visitando il sito di #{''}
                 +e.A.link(href="http://www.sistemianticaduta88.com/accesso-spazi-confinati/") Sicurezza88
 
             +e.btns
                 +btn(href=jv0)._color_2.s9-popup__btn.js-popup-close chiudi
                 +btn(href='http://www.sistemianticaduta88.com/accesso-spazi-confinati/')._color_1.s9-popup__btn vai a Sicurezza88
+
+        +b.s9-popup.s9-popup_privacy#popup-privacy
+            +e.title Norme sulla privacyinformativa sul trattamento di dati personali
+            +e.text
+                | Decreto Legislativo nr. 196 del 30 Giugno 2003 - (Codice in materia di protezione dei dati personali)
+
+            +e.P.text
+                | Ai sensi dell"articolo 13 del decreto legge suddetto, La informiamo che per le finalità connesse alla
+                | fornitura del Sicurezza88 - Spazi Confinati in quanto titolare del sito "
+                +e.A.link(href="http://www.sistemianticaduta88.it/", target="_blank") www.sistemianticaduta88.it
+                | "esegue il trattamento dei dati da Lei forniti, o comunque acquisiti in sede di esecuzione del
+                | Servizio. Il titolare del trattamento è artesuarte.it nella persona del suo rappresentante legale
+                | pro tempore. La informiamo che i dati personali idonei a rivelare l"origine razziale ed etnica,
+                | le convinzioni religiose, filosofiche o di altro genere, le opinioni politiche, l"adesione a partiti,
+                | sindacati, associazioni od organizzazioni a carattere religioso, filosofico, politico o sindacale,
+                | nonché i dati personali idonei a rivelare lo stato di salute e la vita sessuale, quelli attinenti
+                | alla salute, sono dati sensibili. Tali dati non saranno oggetto di trattamento. Il trattamento dei
+                | dati avviene con procedure idonee a tutelare la riservatezza dell’Utente e consiste nella loro
+                | raccolta, registrazione, organizzazione, conservazione, elaborazione, modificazione, selezione,
+                | estrazione, raffronto, utilizzo, interconnessione, blocco, comunicazione, diffusione, cancellazione,
+                | distruzione degli stessi comprese la combinazione di due o più delle attività suddette. Sicurezza
+                | raccoglie e utilizza i dati personali dei propri utenti secondo le norme del Decreto Legislativo
+                | n. 196/2003 ("Codice in materia di protezione dei dati personali") Per esercitare i diritti previsti
+                | dall"art. 7 del Codice in materia di protezione dei dati personali, per avere ulteriori informazioni
+                | sulle modalità di raccolta e utilizzo dei tuoi dati personali, oppure per domande e suggerimenti,
+                | contatta direttamente
+                +e.A.link(href="mailto:info@sistemianticaduta88.com", target="_blank") info@sistemianticaduta88.com
+
+            +e.P.text
+                | Sicurezza88 è tenuta, ai sensi dell"art. 13 del Codice in materia di protezione dei dati personali,
+                | a fornire ai propri utenti alcune specifiche informazioni in merito alle finalità e alle modalità di
+                | utilizzo dei dati personali. L"informativa richiesta dalla Legge (nonché la richiesta dei relativi
+                | consensi, ove necessari) sono forniti da Sicurezza88 e sono un aspetto fondamentale ed imprescindibile
+                | del processo di registrazione a qualunque servizio del sito sistemianticaduta88.com
+
+            +e.P.text
+                | I Dati di Registrazione forniti dagli Utenti sono raccolti ed utilizzati dal Sicurezza88, mediante
+                | strumenti e procedure informatiche, per le seguenti finalità:
+
+            +e.UL.list
+                +e.item
+                    | Finalità direttamente connesse all"erogazione e alla gestione del Servizio;
+                +e.item
+                    | Inviare informazione di tipo commerciale, marketing e indagini di mercato, invio di materiale
+                    | pubblicitario relativo a prodotti e servizi di Sicurezza88, ovvero di terzi inserzionisti
+                    | pubblicitari;
+                +e.item
+                    | Rilevazione della qualità dei Servizi e del grado di soddisfazione degli Utenti, eseguite sia
+                    | direttamente, sia con la collaborazione di società specializzate;
+
+            +e.P.text
+                | Il conferimento dei Dati ha natura facoltativa. Tuttavia, il mancato conferimento, anche parziale,
+                | dei dati indicati espressamente come necessari determinerà l"impossibilità di procedere
+                | all"erogazione del Servizio. Il mancato conferimento dei dati non espressamente indicati come
+                | necessari non pregiudicherà in alcun modo l'erogazione del Servizio.
+
+            +e.P.text
+                | Sicurezza88 riceve e registra in automatico sui Server alcune informazioni provenienti dal browser
+                | utilizzato dall"utente, compreso l"indirizzo IP, le informazioni relative ai cookies e le pagine
+                | richieste dall"utente. Sistemianticaduta88.com utilizza anche altri sistemi automatici di raccolta
+                | di informazioni come, per esempio, i cosiddetti web beacons ed i cookies.
+
+            +e.P.text
+                | Sicurezza88 utilizza tutte le informazioni raccolte mediante sistemi automatici per quattro diversi
+                | obiettivi di massima: personalizzare gli annunci pubblicitari ed i contenuti a disposizione
+                | dell"utente, rispondere nel migliore dei modi alle richieste di determinati servizi e prodotti,
+                | informare gli utenti su offerte speciali e nuovi prodotti, ed infine rendere sempre più efficaci
+                | ed efficienti i servizi ed i prodotti che Sicurezza88 offre ai propri utenti.
+
+            +e.P.text
+                | Il trattamento dei dati dell’Utente per le finalità sopraindicate avrà luogo prevalentemente con
+                | modalità automatizzate ed informatizzate, sempre nel rispetto delle regole di riservatezza e di
+                | sicurezza previste dalla legge.
+
+            +e.P.text
+                | I dati saranno conservati per i termini di legge presso Sicurezza88 e trattati da parte di dipendenti
+                | e/o professionisti da questa incaricati, i quali svolgono le suddette attività sotto la sua diretta
+                | supervisione e responsabilità. A tal fine, i dati comunicati dall’Utente potranno essere trasmessi
+                | a soggetti esterni, anche all’Estero, che svolgono funzioni strettamente connesse e strumentali
+                | all’operatività del Servizio.
+
+            +e.P.text
+                | L'Utente In ogni momento potrà esercitare i Suoi diritti nei confronti del titolare del trattamento,
+                | ai sensi dell"art. 7 del Codice della privacy (già art. 13 della legge n. 675/1996), in particolare
+                | Lei potrà chiedere contattando: Sicurezza88 oppure invando posta elettronica a
+                +e.A.link(href="mailto:info@sistemianticaduta88.com", target="_blank") info@sistemianticaduta88.com
+                | di conoscere l"esistenza di trattamenti di dati che possono riguardarla; di ottenere senza ritardo
+                | la comunicazione in forma intellegibile dei medesimi dati e della loro origine, la cancellazione,
+                | la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge;
+
+            +e.P.text
+                | l"aggiornamento, la rettificazione ovvero l"integrazione dei dati; l"attestazione che le operazioni
+                | predette sono state portate a conoscenza di coloro ai quali i dati sono stati comunicati, eccettuato
+                | il caso in cui tale adempimento si riveli impossibile o comporti un impiego di mezzi manifestamente
+                | sproporzionato rispetto al diritto tutelato; di opporsi, in tutto o in parte, per motivi legittimi,
+                | al trattamento dei dati personali che la riguardano, ancorché pertinenti allo scopo della raccolta.
+
+            +e.P.text Sicurezza88
+
+            +e.P.text © 2017

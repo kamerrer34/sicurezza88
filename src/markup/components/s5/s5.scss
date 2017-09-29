@@ -110,8 +110,9 @@
     }
     
     &__item {
+        margin-bottom: rem(20);
         font-size: rem(32);
-        line-height: (56/32);
+        line-height: (38/32);
         letter-spacing: rem(1);
         color: #fff;
     

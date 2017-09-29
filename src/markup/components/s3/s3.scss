@@ -32,7 +32,7 @@
             transform: skewY(5deg);
         
             @include below($mobile) {
-                bottom: rem(-34);
+                bottom: rem(-323);
             
                 width: rem(295);
             }
@@ -48,7 +48,7 @@
     
         @include below($mobile) {
             right: 0;
-            bottom: rem(5);
+            bottom: rem(-278);
             
             width: rem(335);
         }
